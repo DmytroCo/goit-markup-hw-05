@@ -455,3 +455,120 @@ h1, h2, h3, h4, h5, h6, p {
         margin-right: 120px;
 }
 /*end footer*/
+
+/*bacdrop*/
+
+.backdrop {
+        position:fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+        z-index: 9999;
+        height:100%;
+        background-color: rgba(46, 47, 66, 0.4);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.model {
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+        background-color: #fcfcfc;
+        position:absolute;
+        top:50%;
+        left:50%;
+        border-radius: 4px;
+        min-height: 584px;
+        transform:translate(-50%, -50%);
+        padding-left: 24px ;
+        padding-top: 72px;
+        padding-right: 24px;
+}
+.backdrop.is-open {
+        visibility: visible;
+        pointer-events: auto;
+        opacity: 1;
+}
+.model-class-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        border:1px solid #e7e9fc;
+        line-height: 0; 
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.model-class-btn:hover,
+.model-class-btn:focus {
+        border:none;
+        background-color: #404bbf;
+}
+.model-class-btn:hover > .close-icon,
+.model-class-btn:focus > .close-icon {
+        fill: #fff;
+}
+.model-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        width: 360px;
+        margin-bottom: 16px;
+}
+ .form-wrapper-cont {
+
+ }
+.model-form-label {
+
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        margin-bottom: 4px;
+
+}
+.model-cont-input {
+        position: relative;
+}
+.model-input {
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        height: 40px;
+        width: 100%;
+        padding-left: 38px;
+        outline: none;
+}
+.model-input:focus,
+.model-input:hover {
+        border-color:#4d5ae5;
+
+}
+.model-icon {
+        position: absolute;
+        top:50%;
+        left: 16px;;
+        transform: translateY(-50%);
+}
+
+
+
+
+
+/* end bacdrop*/
