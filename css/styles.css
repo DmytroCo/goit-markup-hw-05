@@ -583,15 +583,6 @@ h1, h2, h3, h4, h5, h6, p {
         letter-spacing: 0.04em;
         color: #8e8f99;
 }
-.model-form-label-comment {
-        display: block;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
-        color: #8e8f99;
-        margin-bottom: 4px;
-}
 .model-textarea {
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
