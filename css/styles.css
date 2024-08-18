@@ -578,7 +578,7 @@ h1, h2, h3, h4, h5, h6, p {
 .form-wrapper-cont-comment {
         font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         margin-bottom: 16px;
         letter-spacing: 0.04em;
         color: #8e8f99;
@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6, p {
         display: block;
         font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
         margin-bottom: 4px;
@@ -619,8 +619,20 @@ h1, h2, h3, h4, h5, h6, p {
 .model-cont-checkbox {
         margin-bottom: 24px;
 }
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
 .form-wrapper-cont-comment{
-        margin-bottom: 17px;
+        margin-bottom: 16px;
 }
 .custom-checkbox {
         border-radius: 2px;
